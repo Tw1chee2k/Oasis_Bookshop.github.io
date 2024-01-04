@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/begin.css">
+    <title>Oasis Bookshop</title>
+</head>
+<body>
+<header>
+    <div class="left-element_header">
+        <div class="books book-red"></div>
+        <div class="books book-blue"></div>
+        <div class="books book-yellow"></div>
+        <div class = "oasis_text">
+            <div>Oasis</div>
+            <div>Bookshop</div>  
+        </div>
+
+    </div>
+
+    <div class="center-element_header">
+        <a id="menu-button">
+            <img class="menu-button_img" src="static/img/menu_black.png" alt="">
+        </a>
+    
+        <nav>
+            <ul>
+                <li data-color="red" data-href="/">Home</li>
+                <li data-color="yellow" data-href="/catalog.html">Books</li>
+                <li data-color="green" data-href="/about.html">About us</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="right-element_header">
+        <div class="cont_right_elements">
+            <div>My cart</div>
+                <div class="center-container">
+                    <img src="static/img/Shopping Bag.png" width="33" height="33" alt="">
+                    <div class = "circle_red circle_red_text">0</div>
+                </div>
+            <div class="vertical-line"></div>
+            <div class="name_account">Account</div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="sale_cont">
+        <div class="left_sale_cont">
+            <img class = "bookshop_png" src="static/img/bookshop.png" alt="">
+        </div>
+        <div class="right_sale_cont">
+            <div>
+                <span class="green_text">NEW</span> 
+                COLLECTION
+            </div>
+            
+                <div>
+                    <img class = "sale_photo" src="static/img/sale.png" alt="">
+                    <span class = "text_underCollection">*FOR PRE-ORDER!</span>
+                    <span class = "text_FF">FF</span>  
+                </div>
+                <div class="circle_proc"></div>
+
+                <button class="but_BN" onclick="window.location.href='catalog.html'">BUY NOW</button>
+
+
+                <img class = "photo_pana" src="static/img/pana.png" width="130" height="120" alt="">
+                <img class="photo_rafiki" src="static/img/rafiki.png" width="350" height="150" alt="">
+                <img class = "photo_Group_1" src="static/img/Group 1.png" width="120" height="" alt="">
+        </div>
+    </div>
+    <div class="second_cont">
+        <div class="second_left_cont">
+            <div class = "second_cont_label">FEATURED BOOKS<br>
+                OF THE <span class = "green_text">JANUARY</span>
+            </div>
+                <div class = "text_under_JANUARY">*ALL THE BEST BOOKS ARE ONLY HERE</div>
+                <div class="text_under_best_books">
+                    From exciting adventures and mysterious detectives 
+                    to deep philosophical works and warm novels. <br>
+                    Discover new authors and enjoy the unique feeling of the world created by words. 
+                </div>
+                <button class="but_SM">SEE MORE</button>
+        </div>
+            <div class="second_right_cont">
+                <img class = "reading_png" src="static/img/reading.png" alt="">
+            </div>
+    </div>  
+    <div class="third_cont">
+        <div class="left_third_cont">
+            <img class = "reading2_png" src="static/img/reading2.png" alt="">
+        </div>
+        <div class="right_third_cont">
+            <div class = "right_third_text_cont">
+                <span class = "green_text">BOOKS</span> ARE 
+                <br> ONLY 
+                <span class = "violet_blue_text">HERE</span>
+            </div>
+            
+
+            <div class = "text_black_third_cont">*JOIN US! IT'S FUN HERE!</div>
+            <button class="but_SU">SING UP</button>
+            <img class = "photo_books_with_glasses" src="static/img/books_with_glasses.png" width="260" height="170" alt="">
+            <img class = "photo_Group_2" src="static/img/Group 2.png" width="210" height="300" alt="">   
+        </div>
+    </div>  
+</main>
+<footer>
+    <div class="left-element_footer">
+        <div>OPENING HOURS:</div>
+        <div>EVERY DAY FROM </div>
+        <div>9AM TO 6AM</div>
+    </div>
+    <div class="strange_element_footer">
+        <img src="static/img/VKontakte.png">
+        <img src="static/img/TwitterX.png">
+        <img src="static/img/LinkedIn 3.png">
+    </div>
+    <div class = "center-element_footer">
+        <div>HAVE QUESTIONS?</div>
+        <div>CALL US NOW</div>
+        <div>+44 00 0000 0000</div>
+    </div>
+
+    <div class = "right-element_footer">
+        <div style = "text-align: right;">
+            <div style ="padding-right:6px;">
+                <div>WANT MORE BOOK REVIEWS?</div>
+                <div>OUR SOCIAL NETWORKS</div>
+            </div>
+
+            <div class = "mes_footer_cont">
+                <div style = "padding: 6px;">
+                    <img src="static/img/TikTok.png">
+                    <img src="static/img/Tumblr.png">
+                    <img src="static/img/Facebook.png">
+                    <img src="static/img/LinkedIn.png">
+                    <img src="static/img/VK com.png">
+                    <img src="static/img/Twitter Squared.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menu-button');
+            const menu = document.querySelector('.center-element_header nav ul');
+    
+            menuButton.addEventListener('click', function () {
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    menuButton.querySelector('img').style.transform = 'rotate(0deg)';
+                } else {
+                    menu.style.display = 'block';
+                    menuButton.querySelector('img').style.transform = 'rotate(90deg)';
+                }
+            });
+        });
+    </script>
+</html>
